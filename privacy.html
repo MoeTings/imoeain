@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta name="renderer" content="webkit" />
+        <meta name="force-rendering" content="webkit" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+        function changeValue(obj){
+          /*萌.云上存储
+            官网:https://i.moea.in
+            云盘:https://i.moea.top
+            MoeOxygen*/
+              $(obj).attr("value",$(obj).val());
+              //MoeOxygen,https://moea.top
+          }
+        </script>
+        <title>萌.云上存储</title><!--感谢-->
+    </head>
+    <body class="mdui-theme-accent-pink mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-layout-auto">
+
+      <!--顶栏-->
+        <header class="mdui-color-transparent mdui-appbar mdui-appbar-fixed mdui-shadow-0" style="backdrop-filter: blur(5px);">
+          <div class="mdui-toolbar">
+            <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: '侧边栏'}">
+                <i class="mdui-icon material-icons">menu</i>
+            </span>
+            <a href="index.html" class="mdui-typo-title">萌.云上存储</a>
+            <a href="docs.html" class="mdui-typo-title">文档</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <!--search-->
+            <form action="https://i.moea.top/search">
+            <div class="mdui-textfield mdui-textfield-expandable mdui-float-right mdui-container mdui-textfield-expanded">
+  <input class="mdui-textfield-input" id="search-input" type="text" placeholder="搜索文件" value="" name="keywords" onchange="changeValue(this)"/>
+  <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" type="submit" id="btn" value="Search" style="left:auto;right:0;">
+    <i class="mdui-icon material-icons">search</i>
+  </button>
+</div>
+</form>
+<!--refresh-->
+            <a href="javascript:void(0)" onclick="location.reload()" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新'}">
+                <i class="mdui-icon material-icons">refresh</i>
+            </a>
+          </div>
+        </header>
+
+        <!--侧边栏-->
+        <div class="mdui-drawer" id="main-drawer">
+          <style>
+            .mdui-list-item{border-radius:0px 20px 20px 0px;}
+          </style>
+            <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+                <a href="index.html" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+                <a href="https://i.moea.top" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>
+                    <div class="mdui-list-item-content">云盘</div>
+                </a>
+                <a href="dl.html" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">file_download</i>
+                    <div class="mdui-list-item-content">下载</div>
+                </a>
+                <a href="docs.html" class="mdui-list-item mdui-ripple mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+                    <div class="mdui-list-item-content">文档</div>
+                </a>
+            </div>
+        </div>
+
+<!--主界面-->
+<a id="anchor-top"></a>
+<div class="mdui-container">
+<h1 class="title">萌.云上存储 隐私政策</h1>
+<hr/>
+<div class="mdui-typo">
+   <div>
+    <div>版本生效时间：2022-02-10</div>
+    <div>萌.云上存储 （以及下文提到的"我们"、"我们的"或"本网站"）是 moea.in 和 moea.top 提供的服务。</div>
+    <div>网址：<a href="https://i.moea.in">https://i.moea.in</a></div>
+   </div>
+   <hr/>
+  <div>
+    <div>如果您决定使用我们产品提供的服务，本协议用于告知我们对于用户的隐私如何收集、使用和披露。</div>
+    <div>如果您选择使用我们提供的服务，则表示您同意收集和使用与此政策相关的信息。我们收集的个人信息用于提供和改进服务。除非本隐私政策中另有说明，否则我们不会与任何人一起使用或分享您的信息。</div>
+    <div>除非本隐私政策另有规定，否则本隐私政策中使用的术语与我们的条款和条件具有相同的含义，可在 萌.云上存储 中访问。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">1、收集信息</div>
+    <div>我们收集您提供给我们的部分或全部信息， 以及您使用网站和应用程序的数据，但我们将主要使用收集的数据为您提供满意的服务，并提高您的使用体验。</div><br/>
+    <div class="mdui-typo-title">1.1、设备和技术信息的收集</div>
+    <div>我们可能会收集您使用我们的应用程序所需的数据， 我们可以维护和分析应用程序的功能, 并对应用程序的内容进行个性化设置。</div>
+    <div>我们可能会自动获得有关您的设备的某些信息，包括 IP 地址，国家法典，时区会话开始/停止时间;IDFVs，语言;网络状态 （无线等），浏览器插件类型和版本;平台，SDK 版本，时间戳;技术设备信息 （如设备型号和名称、操作系统名称和版本、CPU 信息、存储大小、屏幕大小、固件、应用程序的软件 API 密钥标识符、推送通知令牌。虽然这些信息（如IDFV、IP地址）可能唯一地标识您的设备，但此信息并没有亲自识别您。某些立法 可以将您的设备唯一标识为个人信息的信息处理。</div>
+<br/>
+    <div class="mdui-typo-title">1.2、常规个人信息收集</div>
+    <div>在使用我们的服务时，我们可能会要求您向我们提供可用于联系或识别您的某些个人身份信息（"个人数据"），个人身份信息可能包括但不限于：</div>
+    <ul>
+      <li>真实姓名</li>
+      <li>电子邮件地址</li>
+    </ul>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">2、如何使用收集的信息</div>
+    <div>萌.云上存储 将收集的数据用于以下其中的部分或全部目的：</div>
+    <ul>
+      <li>提供和维护服务</li>
+      <li>通知您有关我们服务的更改</li>
+      <li>允许您在选择时参与我们服务的互动功能</li>
+      <li>为客户提供关怀和支持</li>
+      <li>提供分析或有价值的信息，以便我们改进服务</li>
+      <li>监控服务的使用情况</li>
+      <li>检测，预防和解决技术问题</li>
+    </ul>
+    <div>当您通过移动设备访问服务时，我们可能会自动收集某些信息，包括但不限于您使用的移动设备类型，移动设备唯一ID，移动设备的IP地址，移动设备操作系统，您使用的移动互联网浏览器的类型，唯一的设备标识符和其他诊断数据（"使用数据"）。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">3、信息存储</div><br/>
+<div class="mdui-typo-title">3.1、数据安全</div>
+<div>数据的安全性对我们很重要，但请记住，没有任何安全措施是完美的或不可渗透的。虽然我们努力使用商业上可接受的方式来保护您的个人数据，但我们无法保证其绝对的安全性。</div>
+<br/>
+<div class="mdui-typo-title">3.2、数据传输</div>
+<div>您的信息（包括个人数据）可能会被转移到您所在州，省，国家或其他政府管辖范围之外的计算机上，并且这些计算机的数据保护法可能与您所在司法管辖区的数据保护法不同。如果您位于中国境外并选择向我们提供信息，请注意我们将数据（包括个人数据）传输到中国并在中国处理。您同意本隐私政策，然后提交此类信息即表示您同意该转让。</div>
+<br/>
+<div class="mdui-typo-title">3.3、数据披露</div>
+<div>萌.云上存储 可能会真诚地披露您的个人资料，相信此类行为是必要的：</div>
+<ul>
+<li>履行法律义务</li>
+<li>保护和捍卫本软件的权利或财产</li>
+<li>防止或调查与服务相关的可能的 保护不当行为</li>
+<li>服务或公众用户的人身安全</li>
+<li>防止法律责任</li>
+</ul>
+<div class="mdui-typo-title">3.4、服务供应商</div>
+<div>我们可能雇用第三方（公司或个人）来促进我们的服务（"服务提供商"）。第三方代表我们提供服务，执行相关服务或协助我们分析服务的使用方式。第三方只能代表我们访问您的个人数据以执行这些任务，并且有义务不将其用于任何其他目的。</div>
+<br/>
+<div class="mdui-typo-title">3.5、链接到其他网站</div>
+<div>我们的服务可能包含指向非我们运营的其他网站的链接。如果您点击第三方链接，您将被引导至该第三方的网站。我们强烈建议您查看您访问的每个站点的隐私政策。我们无法控制任何第三方网站或服务的内容，隐私政策或做法，也不承担任何责任。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">4、删除信息</div>
+    <div>当不再需要信息时，我们将使用合理的措施删除它，以保护信息不被未经授权的访问或使用。用户上传的内容如果涉嫌黄色、暴力不受欢迎内容我们将有权进行删除，用户可以在发现模块进行举报。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">5、保护信息</div>
+    <div>我们已经实施了合理的安全措施，以保障收集信息的机密性、安全性和完整性，并防止未经授权的访问和使用违反本隐私政策的信息。虽然我们采取合理的努力，以保障您的信息在我们维护时依然安全，但请注意，没有任何安全措施是绝对安全的。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">6、与儿童有关的信息资料收集</div>
+    <div>我们非常重视对未成年人个人信息的保护。如果你是14周岁以下的未成年人，在使用我们的服务前，应确保事先取得监护人的同意，如果你是已满14不满18岁的未成年人，在使用我们服务前，应确保事先取得本人或监护人的同意。如果我们得知已收集了14周岁以下儿童的个人资料，我们会采取一切合理步骤，尽快删除有关资料。如果您知道您的孩子在未经您同意的情况下向我们提供了个人信息, 请与我们联系。</div>
+  </div>
+  <div>
+    <div class="mdui-typo-title">7、Cookie技术</div>
+<div>我们使用cookie和类似的跟踪技术来跟踪我们服务上的活动并保留某些信息。</div>
+<div>Cookie是包含少量数据的文件，可能包含匿名唯一标识符。Cookie会从网站发送到您的浏览器并存储在您的设备上。还使用其他跟踪技术比如信标，标签和脚本等，用于收集和跟踪信息以及改进和分析我们的服务。</div>
+<div>您可以指示您的浏览器拒绝所有Cookie或指示何时发送Cookie。但是，如果您不接受Cookie，您可能无法使用我们服务的某些部分。</div>
+<div>我们使用的Cookie示例：</div>
+<ul>
+<li>会话饼干。我们使用Session Cookies来运营我们的服务。</li>
+<li>偏好饼干。我们使用首选项Cookie来记住您的偏好和各种设置。</li>
+<li>安全饼干。出于安全考虑，我们使用安全Cookie。</li>
+</ul>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">8、退出</div>
+<div>根据本隐私政策，您可以从您的每台设备上注销账户并停止使用本网站，从而永远自由地选择不参与将来在软件内收集您的个人信息。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">9、支持</div>
+<div>如果您对本隐私政策有任何疑问，请联系我们：<a href="mailto:hi@moea.top">hi@moea.top</a></div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">10、对此隐私策略的更改</div>
+ <div>我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策来通知您任何更改。</div>
+ <div>建议您定期查看本隐私政策以了解任何变更。本隐私政策的更改在此页面上发布时生效。</div>
+  </div>
+  <hr/>
+  <div>
+    <div class="mdui-typo-title">11、最后的最后</div>
+<div>本隐私政策借鉴其它网站上的隐私政策,侵删!</div>
+  </div>
+</div>
+</div>
+
+<!--底栏-->
+<footer>
+<div class="mdui-container">
+<div class="mdui-row mdui-p-y-4 mdui-typo mdui-float-left">
+<div>Copyright &copy; 2022 <a href="https://i.moea.in/" target="_blank">萌.云上存储CuteCloud</a></div>
+</div>
+</div>
+</footer>
+
+
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">/*萌.云上存储
+          官网:https://i.moea.in
+          云盘:https://i.moea.top
+          MoeOxygen*/</script>
+    </body>
+</html>
