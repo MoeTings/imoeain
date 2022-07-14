@@ -18,7 +18,16 @@
               //MoeOxygen,https://moea.top
           }
         </script>
-        <title>萌.云上存储</title><!--感谢-->
+        <title>萌.云上存储</title>
+        <style>
+          #alll {
+            color: #1d1d1f;
+          }
+
+          body {
+            background-color: #fbfbfd;
+          }
+        </style>
     </head>
     <body class="mdui-theme-accent-pink mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-layout-auto">
 
@@ -26,23 +35,23 @@
         <header class="mdui-color-transparent mdui-appbar mdui-appbar-fixed mdui-shadow-0" style="backdrop-filter: blur(5px);">
           <div class="mdui-toolbar">
             <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: '侧边栏'}">
-                <i class="mdui-icon material-icons">menu</i>
+                <i class="mdui-icon material-icons" id="alll">menu</i>
             </span>
-            <a href="index.html" class="mdui-typo-title">萌.云上存储</a>
-            <a href="docs.html" class="mdui-typo-title">文档</a>
+            <a href="index.html" class="mdui-typo-title" id="alll">萌.云上存储</a>
+            <a href="docs.html" class="mdui-typo-title" id="alll">文档</a>
             <div class="mdui-toolbar-spacer"></div>
             <!--search-->
             <form action="https://i.moea.top/search">
             <div class="mdui-textfield mdui-textfield-expandable mdui-float-right mdui-container mdui-textfield-expanded">
   <input class="mdui-textfield-input" id="search-input" type="text" placeholder="搜索文件" value="" name="keywords" onchange="changeValue(this)"/>
   <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" type="submit" id="btn" value="Search" style="left:auto;right:0;">
-    <i class="mdui-icon material-icons">search</i>
+    <i class="mdui-icon material-icons" id="alll">search</i>
   </button>
 </div>
 </form>
 <!--refresh-->
             <a href="javascript:void(0)" onclick="location.reload()" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新'}">
-                <i class="mdui-icon material-icons">refresh</i>
+                <i class="mdui-icon material-icons" id="alll">refresh</i>
             </a>
           </div>
         </header>
@@ -54,20 +63,20 @@
           </style>
             <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
                 <a href="index.html" class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content">主页</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">home</i>
+                    <div class="mdui-list-item-content" id="alll">主页</div>
                 </a>
                 <a href="https://i.moea.top" class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>
-                    <div class="mdui-list-item-content">云盘</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">cloud</i>
+                    <div class="mdui-list-item-content" id="alll">云盘</div>
                 </a>
                 <a href="dl.html" class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">file_download</i>
-                    <div class="mdui-list-item-content">下载</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">file_download</i>
+                    <div class="mdui-list-item-content" id="alll">下载</div>
                 </a>
                 <a href="docs.html" class="mdui-list-item mdui-ripple mdui-list-item-active">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
-                    <div class="mdui-list-item-content">文档</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">book</i>
+                    <div class="mdui-list-item-content" id="alll">文档</div>
                 </a>
             </div>
         </div>
@@ -75,10 +84,10 @@
 <!--主界面-->
 <a id="anchor-top"></a>
 <div class="mdui-container">
-<h1 class="title">萌.云上存储 帮助</h1>
+<h1 class="title" id="alll">萌.云上存储 帮助</h1>
 <hr/>
 <div class="mdui-typo">
-  <div>在使用时出现的大部分疑问都可在此处解决,您也可以<a href="https://doc.moea.in/#/help/01">点击此处</a>查看旧版文档</div>
+  <div id="alll">在使用时出现的大部分疑问都可在此处解决,您也可以<a href="https://doc.moea.in/#/help/01">点击此处</a>查看旧版文档</div>
   <br>
   <div>
     <div><a href="#hp1">账号问题</a></div>
@@ -88,102 +97,102 @@
     <div><a href="#hp5">其它问题</a></div>
   </div>
   <hr/>
-    <div><h4 id="hp1">账号问题</h4>
+    <div><h4 id="hp1" id="alll">账号问题</h4>
       <blockquote>
-        <p>为什么无法注册账号?</p>
+        <p id="alll">为什么无法注册账号?</p>
         <footer class="mdui-text-color-pink">抱歉,为防止上传违规文件,所以暂时不支持注册账号.</footer>
       </blockquote>
       <blockquote>
-        <p>如何注册账号?</p>
+        <p id="alll">如何注册账号?</p>
           <footer class="mdui-text-color-pink">您可以尝试向<a href="mailto:hi@moea.top">hi@moea.top</a>发送申请邮件尝试</footer>
       </blockquote>
       <blockquote>
-        <p>以后会开放注册吗?</p>
+        <p id="alll">以后会开放注册吗?</p>
         <footer class="mdui-text-color-pink">可能性不大,0.00000001%的概率.</footer>
       </blockquote>
       <blockquote>
-        <p>登录账号时提示"账号未激活"或"账号被封禁"</p>
+        <p id="alll">登录账号时提示"账号未激活"或"账号被封禁"</p>
         <footer class="mdui-text-color-pink">请联系管理员解决</footer>
       </blockquote>
       <blockquote>
-        <p>账号密码忘了怎么办?</p>
+        <p id="alll">账号密码忘了怎么办?</p>
         <footer class="mdui-text-color-pink">请联系管理员更改密码</footer>
       </blockquote>
     </div>
     <hr/>
     <div>
-      <h4 id="hp2">上传及下载问题</h4>
+      <h4 id="hp2" id="alll">上传及下载问题</h4>
         <blockquote>
-          <p>上传或下载速度太慢</p>
+          <p id="alll">上传或下载速度太慢</p>
           <footer class="mdui-text-color-pink">没办法,服务器不在国内,可尝试更换网络环境或使用下载工具尝试下载</footer>
         </blockquote>
         <blockquote>
-          <p>上传失败,再次上传无法上传</p>
+          <p id="alll">上传失败,再次上传无法上传</p>
           <footer class="mdui-text-color-pink">请联系管理员处理</footer>
         </blockquote>
         <blockquote>
-          <p>支持离线下载吗</p>
+          <p id="alll">支持离线下载吗</p>
           <footer class="mdui-text-color-pink">不支持</footer>
         </blockquote>
         <blockquote>
-          <p>可以打包下载吗</p>
+          <p id="alll">可以打包下载吗</p>
           <footer class="mdui-text-color-pink">可以但不完全可以，所有下载文件需小于200MB</footer>
         </blockquote>
     </div>
     <hr/>
     <div>
-      <h4 id="hp3">分享问题</h4>
+      <h4 id="hp3" id="alll">分享问题</h4>
       <h6 class="mdui-text-color-red">请不要分享违规文件!!!</h6>
         <blockquote>
-          <p>分享文件时可以设置密码吗?</p>
+          <p id="alll">分享文件时可以设置密码吗?</p>
           <footer class="mdui-text-color-pink">可以</footer>
         </blockquote>
         <blockquote>
-          <p>可以自定义分享链接吗?</p>
+          <p id="alll">可以自定义分享链接吗?</p>
           <footer class="mdui-text-color-pink">不支持</footer>
         </blockquote>
         <blockquote>
-          <p>可以保存他人分享的文件到我的账号里吗</p>
+          <p id="alll">可以保存他人分享的文件到我的账号里吗</p>
           <footer class="mdui-text-color-pink">暂不可以</footer>
         </blockquote>
         <blockquote>
-          <p>可以设置限制吗?</p>
+          <p id="alll">可以设置限制吗?</p>
           <footer class="mdui-text-color-pink">支持 分享时限,下载次数以及访问次数 的方式限制</footer>
         </blockquote>
     </div>
     <hr/>
     <div>
-      <h4 id="hp4">容量问题</h4>
+      <h4 id="hp4" id="alll">容量问题</h4>
         <blockquote>
-          <p>默认有多少容量?</p>
+          <p id="alll">默认有多少容量?</p>
           <footer class="mdui-text-color-pink">现阶段为15G</footer>
         </blockquote>
         <blockquote>
-          <p>不够用怎么办?</p>
+          <p id="alll">不够用怎么办?</p>
           <footer class="mdui-text-color-pink">可以联系管理员处理</footer>
         </blockquote>
         <blockquote>
-          <p>扩容的费用详情</p>
+          <p id="alll">扩容的费用详情</p>
           <footer class="mdui-text-color-pink">抱歉,不采用付费扩容</footer>
         </blockquote>
     </div>
     <hr/>
     <div>
-      <h4 id="hp5">其它问题</h4>
+      <h4 id="hp5" id="alll">其它问题</h4>
         <blockquote>
-          <p>可以在线预览文件吗?</p>
+          <p id="alll">可以在线预览文件吗?</p>
           <footer class="mdui-text-color-pink">可以，但大小不能超过5M(视频等文件除外)</footer>
         </blockquote>
         <blockquote>
-          <p>可以在线预览哪些文件?</p>
+          <p id="alll">可以在线预览哪些文件?</p>
           <footer class="mdui-text-color-pink">doc(docx), xls(xlsx), txt, json, ppt(pptx)等</footer>
         </blockquote>
         <blockquote>
-          <p>可以在线看视频,听音乐吗?</p>
+          <p id="alll">可以在线看视频,听音乐吗?</p>
           <footer class="mdui-text-color-pink">可以</footer>
         </blockquote>
         <blockquote>
-          <p>无法登录,报错"Cannot read properties of undefined (reading 'saveType')"</p>
+          <p id="alll">无法登录,报错"Cannot read properties of undefined (reading 'saveType')"</p>
           <footer class="mdui-text-color-pink">清除浏览器或APP缓存</footer>
         </blockquote>
     </div>
@@ -194,7 +203,7 @@
 <footer>
 <div class="mdui-container">
 <div class="mdui-row mdui-p-y-4 mdui-typo mdui-float-left">
-<div>Copyright &copy; 2022 <a href="https://i.moea.in/" target="_blank">萌.云上存储CuteCloud</a></div>
+<div id="alll">Copyright &copy; 2022 <a href="https://i.moea.in/" target="_blank">萌.云上存储CuteCloud</a></div>
 </div>
 </div>
 </footer>

@@ -18,7 +18,16 @@
               //MoeOxygen,https://moea.top
           }
         </script>
-        <title>萌.云上存储</title><!--感谢-->
+        <title>萌.云上存储</title>
+        <style>
+          #alll {
+            color: #1d1d1f;
+          }
+
+          body {
+            background-color: #fbfbfd;
+          }
+        </style>
     </head>
     <body class="mdui-theme-accent-pink mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-layout-auto">
 
@@ -26,23 +35,23 @@
         <header class="mdui-color-transparent mdui-appbar mdui-appbar-fixed mdui-shadow-0" style="backdrop-filter: blur(5px);">
           <div class="mdui-toolbar">
             <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: '侧边栏'}">
-                <i class="mdui-icon material-icons">menu</i>
+                <i class="mdui-icon material-icons" id="alll">menu</i>
             </span>
-            <a href="index.html" class="mdui-typo-title">萌.云上存储</a>
-            <a href="docs.html" class="mdui-typo-title">文档</a>
+            <a href="index.html" class="mdui-typo-title" id="alll">萌.云上存储</a>
+            <a href="docs.html" class="mdui-typo-title" id="alll">文档</a>
             <div class="mdui-toolbar-spacer"></div>
             <!--search-->
             <form action="https://i.moea.top/search">
             <div class="mdui-textfield mdui-textfield-expandable mdui-float-right mdui-container mdui-textfield-expanded">
   <input class="mdui-textfield-input" id="search-input" type="text" placeholder="搜索文件" value="" name="keywords" onchange="changeValue(this)"/>
   <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" type="submit" id="btn" value="Search" style="left:auto;right:0;">
-    <i class="mdui-icon material-icons">search</i>
+    <i class="mdui-icon material-icons" id="alll">search</i>
   </button>
 </div>
 </form>
 <!--refresh-->
             <a href="javascript:void(0)" onclick="location.reload()" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新'}">
-                <i class="mdui-icon material-icons">refresh</i>
+                <i class="mdui-icon material-icons" id="alll">refresh</i>
             </a>
           </div>
         </header>
@@ -54,20 +63,20 @@
           </style>
             <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
                 <a href="index.html" class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content">主页</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">home</i>
+                    <div class="mdui-list-item-content" id="alll">主页</div>
                 </a>
                 <a href="https://i.moea.top" class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>
-                    <div class="mdui-list-item-content">云盘</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">cloud</i>
+                    <div class="mdui-list-item-content" id="alll">云盘</div>
                 </a>
                 <a href="dl.html" class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">file_download</i>
-                    <div class="mdui-list-item-content">下载</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">file_download</i>
+                    <div class="mdui-list-item-content" id="alll">下载</div>
                 </a>
                 <a href="docs.html" class="mdui-list-item mdui-ripple mdui-list-item-active">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content">文档</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons" id="alll">favorite</i>
+                    <div class="mdui-list-item-content" id="alll">文档</div>
                 </a>
             </div>
         </div>
@@ -75,27 +84,27 @@
 <!--主界面-->
 <a id="anchor-top"></a>
 <div class="mdui-container">
-<h1 class="title">萌.云上存储 致谢名单❤️</h1>
+<h1 class="title" id="alll">萌.云上存储 致谢名单❤️</h1>
 <hr/>
 <div class="mdui-typo">
-  <div>主开发者:<a href="https://moea.in">MoeOxygen</a></div>
+  <div id="alll">主开发者:<a href="https://moea.in">MoeOxygen</a></div>
   <hr/>
-    <div>UI:<a href="https://www.mdui.org/">MDUI</a></div>
-  <div>云盘:<a href="https://cloudreve.org/">Cloudreve</a></div>
-  <div>服务器&域名:<a href="https://cloud.tencent.com/">腾讯云</a></div>
-  <div>对象存储1:<a href="https://www.qingcloud.com/">青云QingCloud</a></div>
-  <div>对象存储2:<a href="https://www.qiniu.com/">七牛云</a></div>
-  <div>CDN&对象存储3:<a href="https://www.dogecloud.com/?iuid=3941">多吉云DogeCloud</a></div>
-  <div>DNS解析分支:<a href="https://www.qingcloud.com/">青云QingCloud</a></div>
-  <div>DNS&CDN&WAF:<a href="https://www.cloudflare.com">Cloudflare</a></div>
-  <div>Android端应用语言:<a href="https://flutter.dev/">Flutter</a></div>
-  <div>Android端应用支持:<a href="https://github.com/YangChengxxyy/cloudreve_flutter">YangChengxxyy</a></div>
-  <div>应用推送服务:<a href="https://www.jiguang.cn">极光推送JPush</a></div>
-  <div>Windows端应用:<a href="https://github.com/nativefier/nativefier">Nativefier</a></div>
-  <div>部分开源文件及源码:<a href="https://www.github.com">Github</a></div>
-  <div>iOS端应用:<a href="https://support.apple.com/apple-configurator">Apple Configurator</a></div>
-  <div>Windows端便捷版应用:<a href="https://portableapps.com/">PortableApps</a></div>
-  <div>Windows端应用安装程序:<a href="https://www.indigorose.com/setup-factory/">Setup Factory</a></div>
+  <div id="alll">UI:<a href="https://www.mdui.org/">MDUI</a></div>
+  <div id="alll">云盘:<a href="https://cloudreve.org/">Cloudreve</a></div>
+  <div id="alll">服务器&域名:<a href="https://cloud.tencent.com/">腾讯云</a></div>
+  <div id="alll">对象存储1:<a href="https://www.qingcloud.com/">青云QingCloud</a></div>
+  <div id="alll">对象存储2:<a href="https://www.qiniu.com/">七牛云</a></div>
+  <div id="alll">CDN&对象存储3:<a href="https://www.dogecloud.com/?iuid=3941">多吉云DogeCloud</a></div>
+  <div id="alll">DNS解析分支:<a href="https://www.qingcloud.com/">青云QingCloud</a></div>
+  <div id="alll">DNS&CDN&WAF:<a href="https://www.cloudflare.com">Cloudflare</a></div>
+  <div id="alll">Android端应用语言:<a href="https://flutter.dev/">Flutter</a></div>
+  <div id="alll">Android端应用支持:<a href="https://github.com/YangChengxxyy/cloudreve_flutter">YangChengxxyy</a></div>
+  <div id="alll">应用推送服务:<a href="https://www.jiguang.cn">极光推送JPush</a></div>
+  <div id="alll">Windows端应用:<a href="https://github.com/nativefier/nativefier">Nativefier</a></div>
+  <div id="alll">部分开源文件及源码:<a href="https://www.github.com">Github</a></div>
+  <div id="alll">iOS端应用:<a href="https://support.apple.com/apple-configurator">Apple Configurator</a></div>
+  <div id="alll">Windows端便捷版应用:<a href="https://portableapps.com/">PortableApps</a></div>
+  <div id="alll">Windows端应用安装程序:<a href="https://www.indigorose.com/setup-factory/">Setup Factory</a></div>
 </div>
 </div>
 
@@ -103,7 +112,7 @@
 <footer>
 <div class="mdui-container">
 <div class="mdui-row mdui-p-y-4 mdui-typo mdui-float-left">
-<div>Copyright &copy; 2022 <a href="https://i.moea.in/" target="_blank">萌.云上存储CuteCloud</a>🥳</div>
+<div id="alll">Copyright &copy; 2022 <a href="https://i.moea.in/" target="_blank">萌.云上存储CuteCloud</a>🥳</div>
 </div>
 </div>
 </footer>
